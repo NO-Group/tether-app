@@ -1,3 +1,4 @@
+git update-index --chmod=+x .devcontainer/install_flutter.sh
 #!/bin/bash
 set -e
 
