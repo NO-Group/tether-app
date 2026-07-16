@@ -3,14 +3,14 @@ import 'config/router.dart';
 import 'config/theme.dart';
 import 'services/supabase_service.dart';
 
-class TetherApp extends StatefulWidget {
-  const TetherApp({super.key});
+class BookNestApp extends StatefulWidget {
+  const BookNestApp({super.key});
 
   @override
-  State<TetherApp> createState() => _TetherAppState();
+  State<BookNestApp> createState() => _BookNestAppState();
 }
 
-class _TetherAppState extends State<TetherApp> {
+class _BookNestAppState extends State<BookNestApp> {
   final _supabase = SupabaseService();
   bool _initialized = false;
 
@@ -45,7 +45,7 @@ class _TetherAppState extends State<TetherApp> {
                   ),
                   child: const Center(
                     child: Text(
-                      'T',
+                      'B',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 48,
@@ -64,10 +64,10 @@ class _TetherAppState extends State<TetherApp> {
     }
 
     return MaterialApp.router(
-      title: 'Tether',
+      title: 'BookNest',
       debugShowCheckedModeBanner: false,
-      theme: TetherTheme.darkTheme,
-      darkTheme: TetherTheme.darkTheme,
+      theme: BookNestTheme.darkTheme,
+      darkTheme: BookNestTheme.darkTheme,
       themeMode: ThemeMode.dark,
       routerConfig: router,
     );
