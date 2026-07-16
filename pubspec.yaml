@@ -1,5 +1,5 @@
-name: tether_app
-description: Tether - Bookworm Communication Platform
+name: booknest
+description: BookNest by N.O Group - The Digital Library Ecosystem for Bookworms
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -22,11 +22,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  
-  fonts:
-    - family: NovaRound
-      fonts:
-        - asset: assets/fonts/NovaRound-Regular.ttf
-  
-  assets:
-    - assets/logo/
