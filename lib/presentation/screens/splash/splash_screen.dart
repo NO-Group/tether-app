@@ -40,32 +40,41 @@ class _SplashScreenState extends State<SplashScreen> {
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                color: const Color(0xFF00D4FF),
+                gradient: const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Color(0xFFFFD000), Color(0xFFFF6A00)],
+                ),
                 borderRadius: BorderRadius.circular(24),
               ),
               child: const Center(
-                child: Text(
-                  'T',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 56,
-                    fontWeight: FontWeight.bold,
-                  ),
+                child: Icon(
+                  Icons.menu_book,
+                  color: Colors.white,
+                  size: 48,
                 ),
               ),
             ),
             const SizedBox(height: 24),
             const Text(
-              'Tether',
+              'BookNest',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 36,
-                fontFamily: 'NovaRound',
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 8),
+            const Text(
+              'by N.O Group',
+              style: TextStyle(
+                color: Color(0xFF888888),
+                fontSize: 14,
               ),
             ),
             const SizedBox(height: 48),
             const CircularProgressIndicator(
-              color: Color(0xFF00D4FF),
+              color: Color(0xFFFF6A00),
               strokeWidth: 3,
             ),
           ],
