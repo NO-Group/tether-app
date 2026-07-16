@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TetherColors {
+class BookNestColors {
   static const Color darkBackground = Color(0xFF0A0A0A);
   static const Color darkChatBackground = Color(0xFF0F0F0F);
   static const Color darkReceivedMessage = Color(0xFF1F1F1F);
@@ -10,35 +10,36 @@ class TetherColors {
   static const Color darkTextSecondary = Color(0xFF888888);
   static const Color cyan = Color(0xFF00D4FF);
   static const Color cyanDark = Color(0xFF00A8CC);
+  static const Color yellow = Color(0xFFFFD000);
+  static const Color orange = Color(0xFFFF6A00);
 }
 
-class TetherTheme {
+class BookNestTheme {
   static ThemeData get darkTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      scaffoldBackgroundColor: TetherColors.darkBackground,
-      fontFamily: 'NovaRound',
+      scaffoldBackgroundColor: BookNestColors.darkBackground,
       colorScheme: const ColorScheme.dark(
-        primary: TetherColors.cyan,
-        secondary: TetherColors.cyanDark,
-        surface: TetherColors.darkChatBackground,
-        background: TetherColors.darkBackground,
-        onPrimary: TetherColors.darkTextPrimary,
-        onSecondary: TetherColors.darkTextPrimary,
-        onSurface: TetherColors.darkTextPrimary,
-        onBackground: TetherColors.darkTextPrimary,
-        outline: TetherColors.darkBorder,
+        primary: BookNestColors.cyan,
+        secondary: BookNestColors.cyanDark,
+        surface: BookNestColors.darkChatBackground,
+        background: BookNestColors.darkBackground,
+        onPrimary: BookNestColors.darkTextPrimary,
+        onSecondary: BookNestColors.darkTextPrimary,
+        onSurface: BookNestColors.darkTextPrimary,
+        onBackground: BookNestColors.darkTextPrimary,
+        outline: BookNestColors.darkBorder,
       ),
       appBarTheme: const AppBarTheme(
-        backgroundColor: TetherColors.darkBackground,
-        foregroundColor: TetherColors.darkTextPrimary,
+        backgroundColor: BookNestColors.darkBackground,
+        foregroundColor: BookNestColors.darkTextPrimary,
         elevation: 0,
         centerTitle: true,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: TetherColors.cyan,
+          backgroundColor: BookNestColors.cyan,
           foregroundColor: Colors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
